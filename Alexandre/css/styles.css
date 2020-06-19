@@ -1,0 +1,114 @@
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/*styles*/
+*{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav .menu li{
+    padding: 10px 20px;
+    width: 100px;
+}
+
+nav .menu li:hover{
+    background-color: #CCCCCC;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: #555555;
+}
+
+header h1{
+    height: 7vh;
+    line-height: 7vh;
+    text-transform: uppercase;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #F6F6F6;
+}
+
+footer p{
+    font-size: 0.75em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/*home page*/
+
+main #home-img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100vw;
+    height: 100vh;  /* como fazer pra não aparecer a barra de rolagem? */
+    object-fit: cover;
+}
+
+/*About*/
+
+#about {
+    display: flex;
+    text-align: center;
+}
+
+.remarks{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(-25%);
+    text-align: left;
+}
+
+.remark {
+margin-bottom: 5%;
+}
+
+.remarker{
+    font-size: 0.8em;
+    color: #555555;
+    text-align: right;
+}
+
+#about-img img {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translateX(25%);
+    width: 35vw;
+    height: 70vh;
+    object-fit: none;
+    object-position: center;
+    box-shadow: 0 0 25px rgba(220,220,220,0.3);
+}
+
+/*Music*/
+
+/*Contact*/
