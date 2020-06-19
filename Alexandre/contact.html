@@ -10,41 +10,73 @@
         <h1 align="center">Jane Doe</h1>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="music.html"><li>Music</li></a>
+                <a href="contact.html"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
-
-    <div class="content">
-        <div class="contacts">
-            <div class="contact booking">
-                <p>email: info@mysite.com</p>
-                <p>phone: 123-456-7890</p>
-                <p>BOOKING | Daniel Ku</p>
+    
+    <main id="about">
+        <div class="contacts col-left col-centered">
+            <div class="contact manager card">
+                <h3 class="staff-name">
+                    <span class="job">Manager</span>
+                    <span class="txt-devider">|</span>
+                    <span class="name">Karen Blanche</span>
+                </h3>
+                <div class="channels">
+                    <p class="email"><label class="channel">email:</label><span class="email-addrs">info@mysite.com</span></p>
+                    <p class="phone"><label class="channel">phone:</label><span class="phone-nbr">123-456-7890</span></p>
+                </div>
             </div>
-            <div class="contact label">
-                <p>email: info@mysite.com</p>
-                <p>phone: 123-456-7890</p>
-                <p>LABEL | Wix Records, Jake Coldham</p>
+            <div class="contact booking card">
+                <h3 class="staff-name">
+                    <span class="job">Booking</span>
+                    <span class="txt-devider">|</span>
+                    <span class="name">Daniel Ku</span>
+                </h3>
+                <div class="channels">
+                    <p class="email"><label class="channel">email:</label><span class="email-addrs">info@mysite.com</span></p>
+                    <p class="phone"><label class="channel">phone:</label><span class="phone-nbr">123-456-7890</span></p>
+                </div>
             </div>
-            <div class="contact pr">
-                <p>email: info@mysite.com</p>
-                <p>phone: 123-456-7890</p>
-                <p>PR | That Girl Pr, Sarah Brookstone</p>
+            <div class="contact label card">
+                <h3 class="staff-name">
+                    <span class="job">Label</span>
+                    <span class="txt-devider">-</span>
+                    <span class="partner">Wix Records</span>
+                    <span class="txt-devider">|</span>
+                    <span class="name">Jake Coldham</span>
+                </h3>
+                <div class="channels">
+                    <p class="email"><label class="channel">email:</label><span class="email-addrs">info@mysite.com</span></p>
+                    <p class="phone"><label class="channel">phone:</label><span class="phone-nbr">123-456-7890</span></p>
+                </div>
             </div>
-            <div class="contact staff">
-                <p>email: info@mysite.com</p>
-                <p>phone: 123-456-7890</p>
+            <div class="contact pr card">
+                <h3 class="staff-name">
+                    <span class="job">PR</span>
+                    <span class="txt-devider">-</span>
+                    <span class="partner">That Girl PR</span>
+                    <span class="txt-devider">|</span>
+                    <span class="name">Sarah Brookstone</span>
+                </h3>
+                <div class="channels">
+                    <p class="email"><label class="channel">email:</label><span class="email-addrs">info@mysite.com</span></p>
+                    <p class="phone"><label class="channel">phone:</label><span class="phone-nbr">123-456-7890</span></p>
+                </div>
             </div>
         </div>
-    </div>
-
+        <div id="send-msg" class="col-right col-centered">
+            send us a message <!-- to do -->
+        </div>
+    </main>
+    
     <footer>
         <p align="center">©Copyright - Jane Doe</p>
     </footer>
-
+    
 </body>
 </html>

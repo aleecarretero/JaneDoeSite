@@ -2,7 +2,43 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+/* card */
+
+.card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+/* grids */
+
+.col-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-right{
+    position: absolute;
+    right: 0;
+    min-height: 100%;
+    width: 50%;
+    max-width: 50%;
+}
+
+.col-left {
+    position: absolute;
+    left: 0;
+    min-height: 100%;
+    width: 50%;
+    max-width: 50%;
+}
+
 /*styles*/
+
 *{
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -11,6 +47,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #fafafa;
 }
 
 header{
@@ -21,32 +58,49 @@ header{
     top: 0;
     left: 0;
     background: white;
+    z-index: 1000;
 }
 
-nav ul{
+nav .menu{
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
-}
-
-nav .menu li{
-    padding: 10px 20px;
-    width: 100px;
-}
-
-nav .menu li:hover{
-    background-color: #CCCCCC;
+    padding: 0 0 5px 0;
+    margin: 0;
+    height: 3rem;
 }
 
 nav .menu a{
+    width: 100px;
+    height: 100%;
     text-decoration: none;
     color: #555555;
+    border-radius: 5px;
+}
+
+nav .menu a:hover{
+    background-color: #CCCCCC;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+nav .menu a li {
+    height: 100%;
+    line-height: calc(3rem - 5px);
 }
 
 header h1{
-    height: 7vh;
-    line-height: 7vh;
+    height: 4rem;
+    line-height: 4rem;
     text-transform: uppercase;
+    margin: 0;
+}
+
+main {
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    min-height: calc(100vh - 9.5rem);
 }
 
 footer{
@@ -54,22 +108,23 @@ footer{
     width: 100%;
     bottom: 0;
     background-color: #F6F6F6;
+    height: 2.5rem;
 }
 
 footer p{
-    font-size: 0.75em;
-    margin: 5px auto;
+    font-size: 0.80em;
+    height: 1em;
     text-align: center;
 }
 
 /*home page*/
 
-main #home-img{
-    max-width: 100%;
-    max-height: 100%;
-    width: 100vw;
-    height: 100vh;  /* como fazer pra não aparecer a barra de rolagem? */
+main #home-img {
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 9.5rem);
     object-fit: cover;
+    object-position: center;
 }
 
 /*About*/
@@ -80,35 +135,67 @@ main #home-img{
 }
 
 .remarks{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateX(-25%);
     text-align: left;
+    font-size: 115%;
 }
 
 .remark {
-margin-bottom: 5%;
+    width: 85%;
+}
+
+.remark-text {
+    margin: 0;
 }
 
 .remarker{
     font-size: 0.8em;
     color: #555555;
     text-align: right;
+    margin: 0;
+}
+
+.remarker .record-label{
+    font-weight: bold;
 }
 
 #about-img img {
-    position: absolute;
-    top: 25%;
-    left: 0;
-    transform: translateX(25%);
-    width: 35vw;
-    height: 70vh;
+    width: 85%;
+    height: 85%;
     object-fit: none;
     object-position: center;
-    box-shadow: 0 0 25px rgba(220,220,220,0.3);
+    padding: 0;
 }
 
 /*Music*/
 
 /*Contact*/
+
+.contacts{
+    padding-top: 20px;
+}
+
+.contact{
+    width: 75%;
+}
+
+.contact .staff-name{
+    margin: 0 0 10px 0;
+    text-transform: capitalize;
+}
+
+/* TO DO: Create media query for channels (tall aspect) */
+
+.channels{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.channel {
+    margin-right: 0.25em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.email, .phone{
+    margin: 0 10px;
+}

@@ -10,26 +10,34 @@
         <h1 align="center">Jane Doe</h1>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="music.html"><li>Music</li></a>
+                <a href="contact.html"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
 
+
+    <!-- TO DO: set max width for remarks (ultra wide screens) -->
+    <!-- TO DO: set max height for image (ultra wide screens) -->
+
     <main id="about">
-        <div id="about-img">
-            <img src="img/jane2.jpg">
+        <div id="about-img" class="col-left col-centered">
+            <img class="card" src="img/jane2.jpg">
         </div>
-        <div class="remarks">
-            <div class="remark">
-                <p>"Seattle-based pop star makes her indie debut with a hauntingly beautiful album"</p>
-                <p class="remarker">John Tirckle, Music Today Post</p>
+        <div class="remarks col-right col-centered">
+            <div class="remark card">
+                <p class="remark-text">"Seattle-based pop star makes her indie debut with a hauntingly beautiful album"</p>
+                <p class="remarker">John Tirckle, <span class="record-label">Music Today Post</span></p>
             </div>
-            <div class="remark">
-                <p>"Jane Doe is one of the scene's breakout stars"</p>
-                <p class="remarker">Oliver James, Billboard UK</p>
+            <div class="remark card">
+                <p class="remark-text">"Jane Doe is one of the scene's breakout stars"</p>
+                <p class="remarker">Oliver James, <span class="record-label">Billboard UK</span></p>
+            </div>
+            <div class="remark card">
+                <p class="remark-text">"The Music Industry have been needing some one like Jane Doe for a long time"</p>
+                <p class="remarker">Owen McCarthy, <span class="record-label">Virgin Records</span></p>
             </div>
         </div>
     </main>
