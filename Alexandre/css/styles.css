@@ -5,11 +5,12 @@
 /* card */
 
 .card{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
     background-color: white;
     margin-bottom: 15px;
     padding: 15px;
+    border: 0;
 }
 
 /* grids */
@@ -47,7 +48,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: #f0f0f0;
 }
 
 header{
@@ -87,6 +88,7 @@ nav .menu a:hover{
 nav .menu a li {
     height: 100%;
     line-height: calc(3rem - 5px);
+    text-transform: capitalize;
 }
 
 header h1{
@@ -176,6 +178,9 @@ main #home-img {
 
 .contact{
     width: 75%;
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contact .staff-name{
@@ -183,16 +188,29 @@ main #home-img {
     text-transform: capitalize;
 }
 
+.partner, .job, .txt-devider{
+    color: #555;
+    font-weight: normal;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+}
+
+
 .channels{
     display: flex;
     justify-content: center;
     padding: 5px;
 }
 
+.channels a{
+    color: inherit;
+}
+
 .channel {
     margin-right: 0.25em;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 0.9em;
 }
 .email, .phone{
     margin: 0 10px;
@@ -200,7 +218,7 @@ main #home-img {
 
 @media (max-width: 1185px){
     .contacts{
-        padding: 20px 0 40px;
+        padding: 20px 10px 40px;
     }
 
     .contact{
@@ -216,4 +234,88 @@ main #home-img {
     .email, .phone{
         margin: 10px 10px;
     }
+}
+
+#contact-msg{
+    width: 75%;
+    max-width: 600px;
+}
+
+.section{
+    margin: 0 auto 10px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border-collapse: collapse;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2), 0 0 1px 1px rgba(0,0,0,0.10);
+}
+
+.form-field{
+    margin: 15px 0;
+    position: static;
+}
+
+#contact-msg label, #contact-msg input, #contact-msg textarea{
+    display: inherit;
+    text-align: left;
+    width: 100%;
+}
+
+#contact-msg label{
+    margin-bottom: 5px;
+    font-size: 0.75em;
+}
+
+#contact-msg input, #contact-msg textarea{
+    font-size: 1em;
+    padding: 15px;
+}
+
+#contact-msg textarea{
+    height: 5em;
+    resize: vertical;
+}
+
+#contact-msg input{
+    height: 2em;
+}
+
+#about #buttons{
+    display: flex;
+    align-content: space-around;
+}
+
+#about #buttons button{
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+    padding: 0px;
+    border: 1px solid #555555;
+    height: 2.5em;
+    font-size: 1rem;
+}
+
+#about #buttons button#reset:hover{
+    background-color: #555555;
+    color: #CCCCCC;
+}
+
+#contact-msg button#reset{
+    align-self: flex-start;
+    width: 45%;
+    margin-right: calc(50% - 45%);
+}
+
+#contact-msg button#submit{
+    align-self: flex-end;
+    width: 45%;
+    margin-left: calc(50% - 45%);
+    background-color: #AAA;
+    border: 0;
+}
+
+#contact-msg button#submit:hover{
+    background-color: #555555;
+    color: #CCCCCC;
 }
