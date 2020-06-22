@@ -161,7 +161,7 @@ main #home-img {
 #about-img img {
     width: 85%;
     height: 85%;
-    object-fit: none;
+    object-fit: contain;
     object-position: center;
     padding: 0;
 }
@@ -171,7 +171,7 @@ main #home-img {
 /*Contact*/
 
 .contacts{
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .contact{
@@ -182,8 +182,6 @@ main #home-img {
     margin: 0 0 10px 0;
     text-transform: capitalize;
 }
-
-/* TO DO: Create media query for channels (tall aspect) */
 
 .channels{
     display: flex;
@@ -198,4 +196,24 @@ main #home-img {
 }
 .email, .phone{
     margin: 0 10px;
+}
+
+@media (max-width: 1185px){
+    .contacts{
+        padding: 20px 0 40px;
+    }
+
+    .contact{
+        min-width: 250px;
+    }
+
+    .channels{
+        display: contents;
+        justify-content: center;
+        padding: 5px;
+    }
+    
+    .email, .phone{
+        margin: 10px 10px;
+    }
 }
