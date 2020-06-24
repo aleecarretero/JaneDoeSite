@@ -1,0 +1,35 @@
+/*Music*/
+
+.videos{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 9.5rem);
+    margin-bottom: 2.5em;
+    overflow-y: scroll;
+}
+
+.video{
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 9.5rem - 30px);
+    margin: 15px auto;
+}
+
+.video-desc{
+    display: flex;
+    align-items: center;
+}
+
+.role, .length{
+    font-size: 0.8em;
+    color: #555;
+}
+
+body{
+    overflow: hidden;
+}
+
+main#music{
+    position: relative;
+}
