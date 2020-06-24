@@ -1,14 +1,5 @@
 /*Music*/
 
-.videos{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: calc(100vh - 9.5rem);
-    margin-bottom: 2.5em;
-    overflow-y: scroll;
-}
-
 .video{
     display: flex;
     width: 100%;
@@ -28,8 +19,4 @@
 
 body{
     overflow: hidden;
-}
-
-main#music{
-    position: relative;
 }

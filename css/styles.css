@@ -115,9 +115,17 @@ header nav a[href="#"]{
     font-weight: bold;
 }
 
+.container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100vh - 9.5rem);
+    margin-bottom: 2.5em;
+    overflow-y: auto;
+}
 
 main {
-    position: absolute;
+    position: relative;
     top: 7rem;
     width: 100%;
     min-height: calc(100vh - 9.5rem);
