@@ -38,6 +38,20 @@
     max-width: 50%;
 }
 
+.col-right-35{
+    right: 0;
+    width: 35%;
+    max-width: 35%;
+    padding: 10px;
+}
+
+.col-left-65{
+    left: 0;
+    width: 65%;
+    max-width: 65%;
+    padding: 10px;
+}
+
 /*styles*/
 
 *{
@@ -62,6 +76,12 @@ header{
     z-index: 1000;
 }
 
+header h1{
+    height: 4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+}
 nav .menu{
     display: flex;
     justify-content: center;
@@ -91,18 +111,17 @@ nav .menu a li {
     text-transform: capitalize;
 }
 
-header h1{
-    height: 4rem;
-    line-height: 4rem;
-    text-transform: uppercase;
-    margin: 0;
+header nav a[href="#"]{
+    font-weight: bold;
 }
+
 
 main {
     position: absolute;
     top: 7rem;
     width: 100%;
     min-height: calc(100vh - 9.5rem);
+    margin-bottom: 2.5em;
 }
 
 footer{
@@ -117,205 +136,4 @@ footer p{
     font-size: 0.80em;
     height: 1em;
     text-align: center;
-}
-
-/*home page*/
-
-main #home-img {
-    width: 100%;
-    height: 100%;
-    max-height: calc(100vh - 9.5rem);
-    object-fit: cover;
-    object-position: center;
-}
-
-/*About*/
-
-#about {
-    display: flex;
-    text-align: center;
-}
-
-.remarks{
-    text-align: left;
-    font-size: 115%;
-}
-
-.remark {
-    width: 85%;
-}
-
-.remark-text {
-    margin: 0;
-}
-
-.remarker{
-    font-size: 0.8em;
-    color: #555555;
-    text-align: right;
-    margin: 0;
-}
-
-.remarker .record-label{
-    font-weight: bold;
-}
-
-#about-img img {
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
-    object-position: center;
-    padding: 0;
-}
-
-/*Music*/
-
-/*Contact*/
-
-.contacts{
-    padding: 20px;
-}
-
-.contact{
-    width: 75%;
-    max-width: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.contact .staff-name{
-    margin: 0 0 10px 0;
-    text-transform: capitalize;
-}
-
-.partner, .job, .txt-devider{
-    color: #555;
-    font-weight: normal;
-    font-size: 0.75em;
-    margin-bottom: 10px;
-}
-
-
-.channels{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-.channels a{
-    color: inherit;
-}
-
-.channel {
-    margin-right: 0.25em;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 0.9em;
-}
-.email, .phone{
-    margin: 0 10px;
-}
-
-@media (max-width: 1185px){
-    .contacts{
-        padding: 20px 10px 40px;
-    }
-
-    .contact{
-        min-width: 250px;
-    }
-
-    .channels{
-        display: contents;
-        justify-content: center;
-        padding: 5px;
-    }
-    
-    .email, .phone{
-        margin: 10px 10px;
-    }
-}
-
-#contact-msg{
-    width: 75%;
-    max-width: 600px;
-}
-
-.section{
-    margin: 0 auto 10px;
-}
-
-input:focus, textarea:focus{
-    outline: none;
-    border-collapse: collapse;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2), 0 0 1px 1px rgba(0,0,0,0.10);
-}
-
-.form-field{
-    margin: 15px 0;
-    position: static;
-}
-
-#contact-msg label, #contact-msg input, #contact-msg textarea{
-    display: inherit;
-    text-align: left;
-    width: 100%;
-}
-
-#contact-msg label{
-    margin-bottom: 5px;
-    font-size: 0.75em;
-}
-
-#contact-msg input, #contact-msg textarea{
-    font-size: 1em;
-    padding: 15px;
-}
-
-#contact-msg textarea{
-    height: 5em;
-    resize: vertical;
-}
-
-#contact-msg input{
-    height: 2em;
-}
-
-#about #buttons{
-    display: flex;
-    align-content: space-around;
-}
-
-#about #buttons button{
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
-    margin-bottom: 15px;
-    padding: 0px;
-    border: 1px solid #555555;
-    height: 2.5em;
-    font-size: 1rem;
-}
-
-#about #buttons button#reset:hover{
-    background-color: #555555;
-    color: #CCCCCC;
-}
-
-#contact-msg button#reset{
-    align-self: flex-start;
-    width: 45%;
-    margin-right: calc(50% - 45%);
-}
-
-#contact-msg button#submit{
-    align-self: flex-end;
-    width: 45%;
-    margin-left: calc(50% - 45%);
-    background-color: #AAA;
-    border: 0;
-}
-
-#contact-msg button#submit:hover{
-    background-color: #555555;
-    color: #CCCCCC;
 }

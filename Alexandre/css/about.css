@@ -1,0 +1,38 @@
+/*About*/
+
+#about {
+    display: flex;
+    text-align: center;
+}
+
+.remarks{
+    text-align: left;
+    font-size: 115%;
+}
+
+.remark {
+    width: 85%;
+}
+
+.remark-text {
+    margin: 0;
+}
+
+.remarker{
+    font-size: 0.8em;
+    color: #555555;
+    text-align: right;
+    margin: 0;
+}
+
+.remarker .record-label{
+    font-weight: bold;
+}
+
+#about-img img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    object-position: center;
+    padding: 0;
+}
